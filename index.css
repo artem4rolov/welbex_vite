@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&family=Montserrat:wght@300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --font-main: #e4e5ea;
+  --font-secondary: #656566;
+  --font-gradient: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%),
+    #e4e5ea;
+  --button-bg: #4077f3;
+  --bg-color: #0e1014;
+}
+
+.container {
+  width: 1140px;
+}
