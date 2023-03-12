@@ -1,11 +1,91 @@
 .App {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   background-color: var(--bg-color);
+  position: relative;
+}
+
+.purple_ball {
+  position: absolute;
+  top: 0;
+  right: 38%;
+}
+
+.purple_light {
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  border-radius: 50%;
+  background: #833ab4;
+  opacity: 0.5;
+  filter: blur(196px);
+
+  top: -20%;
+  left: 50%;
+}
+
+.red_light {
+  position: absolute;
+  width: 311px;
+  height: 311px;
+  border-radius: 50%;
+  background: #961a1a;
+  opacity: 0.5;
+  filter: blur(196px);
+
+  top: 20%;
+  left: -10%;
+}
+
+.red_ball {
+  position: absolute;
+  top: 8%;
+  left: 36%;
+}
+
+.red_ball-2 {
+  position: absolute;
+  bottom: 42%;
+  left: 60%;
+  width: 28px;
+  border-radius: none;
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  filter: blur(2.5px);
+  backdrop-filter: blur(2px);
 }
 
 .container {
   width: 1140px;
+}
+
+@media (max-width: 768px) {
+  .purple_ball {
+    /* display: none; */
+    top: 30%;
+    left: 90%;
+  }
+
+  .purple_light {
+    top: 20%;
+  }
+
+  .red_ball {
+    display: none;
+  }
+
+  .red_ball-2 {
+    /* display: none; */
+    top: 47%;
+    left: 2%;
+  }
+
+  .red_light {
+    left: -30%;
+  }
+
+  .container {
+    width: 100%;
+  }
 }

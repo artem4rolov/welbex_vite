@@ -99,3 +99,64 @@
   padding: 21px 34px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    justify-content: start;
+    padding: 25px;
+    z-index: 50;
+  }
+
+  .main__left {
+    margin-top: 50px;
+  }
+
+  .main__left-title {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .main__left-subtitle {
+    margin-bottom: 45px;
+  }
+
+  .main__left-title-gradient {
+    font-size: 36px;
+  }
+
+  .main__right {
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+  }
+
+  .main__right-grid {
+    gap: 10px 10px;
+  }
+
+  .grid__item {
+    flex-direction: row;
+  }
+
+  .grid__item-title::before {
+    content: "-";
+    display: inline-block;
+    transform: scale(1.3);
+    margin-right: 5px;
+    color: orange;
+  }
+
+  .main__right-title {
+    text-align: left;
+    /* width: 5px; */
+  }
+
+  .grid__item-subtitle {
+    display: none;
+  }
+
+  .main__right-button {
+    display: none;
+  }
+}

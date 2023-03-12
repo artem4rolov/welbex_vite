@@ -1,0 +1,146 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 125px;
+}
+
+/* Left Side of Footer ********************************** */
+
+.footer__data-menu {
+  display: flex;
+  text-align: left;
+}
+
+.menu__item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu__item:first-child {
+  margin-right: 100px;
+}
+
+.menu__item:nth-child(2) {
+  margin-right: 50px;
+}
+
+.menu__item-title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--font-color-secondary);
+}
+
+.menu__item:last-child .menu__item-title {
+  color: transparent;
+}
+
+.menu__item-href {
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 400;
+  line-height: 19px;
+  font-size: 16px;
+  color: var(--font-color-main);
+}
+
+.menu__item-href:hover {
+  opacity: 0.6;
+}
+
+/* Right Side of Footer ***************************** */
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+  text-align: right;
+  justify-content: end;
+}
+
+.footer__contact-number {
+  color: var(--font-color-main);
+  font-family: var(--main-font);
+  font-weight: 500;
+}
+
+.footer__contact-socials {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+}
+
+.footer__adress {
+  color: var(--font-color-main);
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.copyright {
+  font-family: var(--second-font);
+  color: #e4e5ea;
+  font-size: 12px;
+  width: 400;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.copyright__title {
+  margin-bottom: 5px;
+}
+
+.copyright__href {
+  text-decoration: none;
+  width: 187px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.copyright__href:hover {
+  border-bottom: 1px solid white;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background: #1e1e1e;
+    padding: 25px;
+  }
+
+  .footer__data-menu {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+
+  .footer__contact {
+    align-items: start;
+  }
+
+  .menu__item {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+
+  .copyright {
+    justify-content: start;
+    align-items: start;
+  }
+
+  .copyright__href {
+    text-decoration: none;
+    width: 187px;
+    text-align: left;
+    cursor: pointer;
+  }
+}
