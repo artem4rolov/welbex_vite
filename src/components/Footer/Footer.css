@@ -125,11 +125,18 @@
 
   .footer__contact {
     align-items: start;
+    justify-content: start;
+    text-align: left;
   }
 
   .menu__item {
     width: 100px;
     margin-bottom: 15px;
+  }
+
+  .footer__adress {
+    text-align-last: left;
+    width: 100%;
   }
 
   .copyright {
